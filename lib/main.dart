@@ -79,7 +79,6 @@ class MyHomePage extends StatelessWidget {
                           fontWeight: FontWeight.bold, fontSize: 20.0)),
                       const Text('(cm)', style: TextStyle(
                           fontWeight: FontWeight.bold, fontSize: 20.0)),
-
                       Padding(
                         padding: const EdgeInsets.only(top: 16.0, bottom: 10.0),
                         child: TextField(
@@ -135,7 +134,6 @@ class MyHomePage extends StatelessWidget {
           var Girthtext = _girthController.text;
           double? length = double.tryParse(Lengthtext);
           double? girth = double.tryParse(Girthtext);
-
           if (length == null || girth == null) {
             showDialog(
               context: context,
@@ -144,11 +142,9 @@ class MyHomePage extends StatelessWidget {
                   title: const Text("ERROR"),
                   content: const Text("Invalid input"),
                   actions: [
-                    // ปุ่ม OK ใน dialog
                     TextButton(
                       child: const Text('OK'),
                       onPressed: () {
-                        // ปิด dialog
                         Navigator.of(context).pop();
                       },
                     ),
@@ -182,11 +178,9 @@ class MyHomePage extends StatelessWidget {
                   content: Text(
                       'Weight: ${weight_min.round()} - ${weight_max.round()} kg\nPrice: ${price_min.round()} - ${price_max.round()} Baht'),
                   actions: [
-                    // ปุ่ม OK ใน dialog
                     TextButton(
                       child: const Text('OK'),
                       onPressed: () {
-                        // ปิด dialog
                         Navigator.of(context).pop();
                       },
                     ),
