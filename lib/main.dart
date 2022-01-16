@@ -131,10 +131,10 @@ class MyHomePage extends StatelessWidget {
       Padding(
         padding: const EdgeInsets.all(40.0),
         child: ElevatedButton(onPressed: () {
-          var Length_text = _lengthController.text;
-          var Girth_text = _girthController.text;
-          double? length = double.tryParse(Length_text);
-          double? girth = double.tryParse(Girth_text);
+          var Lengthtext = _lengthController.text;
+          var Girthtext = _girthController.text;
+          double? length = double.tryParse(Lengthtext);
+          double? girth = double.tryParse(Girthtext);
 
           if (length == null || girth == null) {
             showDialog(
